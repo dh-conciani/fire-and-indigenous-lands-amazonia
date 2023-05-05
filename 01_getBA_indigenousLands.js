@@ -1,4 +1,5 @@
-// export monthly burned area in function of land cover /land use type for amazonia indigenous lands
+// export monthly burned area in function of land cover /land use type 
+// for amazonia indigenous lands 
 // dhemerson.costa@ipam.org.br
 
 // set output filename
@@ -16,30 +17,11 @@ var territory = ind_lands
     }
   ).rename('territory');
 
-// compute buffer zones
-var buffer = ind_lands.map(function(feature) {
-  return feature.buffer(10000);
-});
-
-// and convert them to image using the 'id' property 
-var territory_buffer = buffer
-  .filter(ee.Filter.notNull(['id']))
-  .reduceToImage({
-    properties: ['id'],
-    reducer: ee.Reducer.first(),
-    }
-  ).rename('territory');
-
-// apply erase (into indigenous lands, to retain only non-indigenous buffer)
-
-var territory_buffer = territory_buffer.updateMask(territory_buffer.neq(territory));
-Map.addLayer(territory_buffer.randomVisualizer());
-
 // read monthly burned area 
 var asset = ee.Image('projects/mapbiomas-workspace/public/collection7_1/mapbiomas-fire-collection2-monthly-burned-coverage-1');
 
 // plot regions
-Map.addLayer(territory.randomVisualizer());
+Map.addLayer(territory.randomVisualizer(), {}, 'Indigenous lands');
 
 // get geometries
 var geometry = asset.geometry();
