@@ -5,8 +5,10 @@
 var basename = 'BA-INDIGENOUS-LANDS-COL2';
 
 // read indigenous lands as vector
-var territory = ee.FeatureCollection('users/rayalves/te_amzl_tis_2020_funai_isa_raisg')
-  // and convert them to image using the 'id' property 
+var ind_lands = ee.FeatureCollection('users/rayalves/te_amzl_tis_2020_funai_isa_raisg');
+
+// and convert them to image using the 'id' property 
+var territory = ind_lands
   .filter(ee.Filter.notNull(['id']))
   .reduceToImage({
     properties: ['id'],
@@ -77,7 +79,7 @@ var calculateArea = function (image, territory, geometry) {
 // perform per year 
 var areas = years.map(
     function (year) {
-        var image = asset.select('classification_' + year);
+        var image = asset.select('burned_coverage_' + year);
         var areas = calculateArea(image, territory, geometry);
         // set additional properties
         areas = areas.map(
