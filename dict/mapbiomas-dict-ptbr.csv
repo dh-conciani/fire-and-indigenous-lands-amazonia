@@ -1,0 +1,38 @@
+id;mapb_0;mapb_1;mapb_1_2;mapb_2;mapb_3;mapb_4
+0;Ignore;Ignore;Ignore;Ignore;Ignore;Ignore
+1;Native vegetation;Forest;Forest;Forest;Forest;Forest
+3;Native vegetation;Forest;Forest Formation;Forest Formation;Forest Formation;Forest Formation
+4;Native vegetation;Forest;Savanna Formation;Savanna Formation;Savanna Formation;Savanna Formation
+5;Native vegetation;Forest;Forest Formation;Magrove;Magrove;Magrove
+49;Native vegetation;Forest;Forest Formation;Wooded Sandbank vegetation;Wooded Sandbank vegetation;Wooded Sandbank vegetation
+10;Native vegetation;Non Forest Natural Formation;Non Forest Natural Formation;Non Forest Natural Formation;Non Forest Natural Formation;Non Forest Natural Formation
+11;Native vegetation;Non Forest Natural Formation;Wetland;Wetland;Wetland;Wetland
+12;Native vegetation;Non Forest Natural Formation;Grassland;Grassland;Grassland;Grassland
+32;Native vegetation;Non Forest Natural Formation;Grassland;Salt Flat;Salt Flat;Salt Flat
+29;Native vegetation;Non Forest Natural Formation;Rocky Outcrop;Rocky Outcrop;Rocky Outcrop;Rocky Outcrop
+50;Native vegetation;Non Forest Natural Formation;Other Non Forest Formations;Herbaceous Sandbank Vegetation;Herbaceous Sandbank Vegetation;Herbaceous Sandbank Vegetation
+13;Native vegetation;Non Forest Natural Formation;Other Non Forest Formations;Other Non Forest Formations;Other Non Forest Formations;Other Non Forest Formations
+14;Anthropogenic use;Farming;Farming;Farming;Farming;Farming
+15;Anthropogenic use;Farming;Pasture;Pasture;Pasture;Pasture
+18;Anthropogenic use;Farming;Agriculture;Agriculture;Agriculture;Agriculture
+19;Anthropogenic use;Farming;Temporary Crop;Agriculture;Temporary Crop;Temporary Crop
+39;Anthropogenic use;Farming;Soybean;Agriculture;Temporary Crop;Soybean
+20;Anthropogenic use;Farming;Sugar Cane;Agriculture;Temporary Crop;Sugar Cane
+40;Anthropogenic use;Farming;Agriculture;Agriculture;Temporary Crop;Rice
+62;Anthropogenic use;Farming;Agriculture;Agriculture;Temporary Crop;Cotton (beta)
+41;Anthropogenic use;Farming;Agriculture;Agriculture;Temporary Crop;Other Temporary Crops
+36;Anthropogenic use;Farming;Agriculture;Agriculture;Perennial Crop;Perennial Crop
+46;Anthropogenic use;Farming;Agriculture;Agriculture;Perennial Crop;Coffee
+47;Anthropogenic use;Farming;Agriculture;Agriculture;Perennial Crop;Citrus
+48;Anthropogenic use;Farming;Agriculture;Agriculture;Perennial Crop;Other Perennial Crops
+9;Anthropogenic use;Farming;Forest Plantation;Forest Plantation;Forest Plantation;Forest Plantation
+21;Anthropogenic use;Farming;Mosaic of Uses;Mosaic of Uses;Mosaic of Uses;Mosaic of Uses
+22;Ignore;Non Vegetated Area;Non Vegetated Area;Non Vegetated Area;Non Vegetated Area;Non Vegetated Area
+23;Native vegetation;Non Vegetated Area;Non Vegetated Area;Beach, Dune and Sand Spot;Beach, Dune and Sand Spot;Beach, Dune and Sand Spot
+24;Anthropogenic use;Non Vegetated Area;Urban Area;Urban Area;Urban Area;Urban Area
+30;Anthropogenic use;Non Vegetated Area;Mining;Mining;Mining;Mining
+25;Ignore;Non Vegetated Area;Non Vegetated Area;Other Non Vegetated Areas;Other Non Vegetated Areas;Other Non Vegetated Areas
+26;Ignore;Water;Water;Water;Water;Water
+33;Ignore;Water;Water;River, Lake and Ocean;River, Lake and Ocean;River, Lake and Ocean
+31;Anthropogenic use;Water;Water;Aquaculture;Aquaculture;Aquaculture
+27;Ignore;Non Observed;Non Observed;Non Observed;Non Observed;Non Observed
