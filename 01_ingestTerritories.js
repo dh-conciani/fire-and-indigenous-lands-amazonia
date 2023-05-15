@@ -4,7 +4,7 @@
 
 // input territories data as features
 var input = ee.FeatureCollection('users/rayalves/te_amzl_tis_2020_funai_isa_raisg')
-//input = ee.FeatureCollection(input.toList(input.size()).slice(0, 9));
+input = ee.FeatureCollection(input.toList(input.size()).slice(0, 19));
 
 var count= 0
 
@@ -53,6 +53,6 @@ for (var i = 0; i < imageList.length().getInfo(); i++) {
         description: count.toString(),
         assetId: output + '/' + count.toString(),
         scale: 10,
-        //region: image.geometry()
+        maxPixels: 1e13
       });
 }
