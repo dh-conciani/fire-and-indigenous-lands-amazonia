@@ -4,8 +4,7 @@
 
 // input territories data as features
 var input = ee.FeatureCollection('users/rayalves/te_amzl_tis_2020_funai_isa_raisg')
-input = ee.FeatureCollection(input.toList(input.size()).slice(0, 9));
-
+//input = ee.FeatureCollection(input.toList(input.size()).slice(0, 9));
 
 var count= 0
 
