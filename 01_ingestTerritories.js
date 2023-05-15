@@ -16,7 +16,7 @@ Map.addLayer(input_image);
 var buffer_size = 10000;
 
 // set output imageCollection
-var output = 'users/dh-conciani/help/tonomapa/sites';
+var output = 'users/dh-conciani/help/nucleo_indigena/fire_23/sites';
 
 // read input data
 var data = ee.ImageCollection(
