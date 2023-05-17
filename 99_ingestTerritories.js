@@ -75,9 +75,3 @@ Export.image.toAsset({
   scale: 10, 
   maxPixels: 1e13
 });
-
-
-
-/*
-
-*/
