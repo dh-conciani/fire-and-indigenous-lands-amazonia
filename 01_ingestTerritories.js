@@ -38,7 +38,7 @@ var data = ee.ImageCollection(
 
 print('raw', data);
 
-// export 
+
 data
   .aggregate_array('system:index')
   .evaluate(function(list){
@@ -53,6 +53,7 @@ data
         description: '' + count,
         assetId: output + '/' + count,
         scale: 10,
+        maxPixels: 1e13
         //region: image.geometry()
       });
 
