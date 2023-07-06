@@ -13,51 +13,51 @@ var territories = ee.ImageCollection('users/dh-conciani/help/nucleo_indigena/fir
 var buffer = territories.updateMask(territories.eq(2));
 
 // get distance mask
-var distance1 = buffer.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance1 = buffer.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)));
 
 // get distance mask
-var distance2 = distance1.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance2 = distance1.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
-  .add(10000);
+  .add(7600);
 
 // get distance mask
-var distance3 = distance2.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance3 = distance2.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
   .updateMask(distance2.mask().not())
-  .add(20000);
+  .add(15200);
 
 // get distance mask
-var distance4 = distance3.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance4 = distance3.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
   .updateMask(distance2.mask().not())
   .updateMask(distance3.mask().not())
-  .add(30000);
+  .add(22800);
 
 // get distance mask
-var distance5 = distance4.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance5 = distance4.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
   .updateMask(distance2.mask().not())
   .updateMask(distance3.mask().not())
   .updateMask(distance4.mask().not())
-  .add(40000);
+  .add(30400);
 
 // get distance mask
-var distance6 = distance5.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance6 = distance5.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
   .updateMask(distance2.mask().not())
   .updateMask(distance3.mask().not())
   .updateMask(distance4.mask().not())
   .updateMask(distance5.mask().not())
-  .add(50000);
+  .add(38000);
 
 // get distance mask
-var distance7 = distance6.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance7 = distance6.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
   .updateMask(distance2.mask().not())
@@ -65,9 +65,9 @@ var distance7 = distance6.distance(ee.Kernel.euclidean(10000, 'meters'), false)
   .updateMask(distance4.mask().not())
   .updateMask(distance5.mask().not())
   .updateMask(distance6.mask().not())
-  .add(60000);
+  .add(45600);
 
-var distance8 = distance7.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance8 = distance7.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
   .updateMask(distance2.mask().not())
@@ -76,9 +76,9 @@ var distance8 = distance7.distance(ee.Kernel.euclidean(10000, 'meters'), false)
   .updateMask(distance5.mask().not())
   .updateMask(distance6.mask().not())
   .updateMask(distance7.mask().not())
-  .add(70000);
+  .add(53200);
 
-var distance9 = distance8.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance9 = distance8.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
   .updateMask(distance2.mask().not())
@@ -88,9 +88,9 @@ var distance9 = distance8.distance(ee.Kernel.euclidean(10000, 'meters'), false)
   .updateMask(distance6.mask().not())
   .updateMask(distance7.mask().not())
   .updateMask(distance8.mask().not())
-  .add(80000);
+  .add(60800);
 
-var distance10 = distance9.distance(ee.Kernel.euclidean(10000, 'meters'), false)
+var distance10 = distance9.distance(ee.Kernel.euclidean(7600, 'meters'), false)
   .updateMask(territories.updateMask(territories.eq(1)))
   .updateMask(distance1.mask().not())
   .updateMask(distance2.mask().not())
@@ -101,12 +101,73 @@ var distance10 = distance9.distance(ee.Kernel.euclidean(10000, 'meters'), false)
   .updateMask(distance7.mask().not())
   .updateMask(distance8.mask().not())
   .updateMask(distance9.mask().not())
-  .add(90000);
+  .add(68400);
+  
+var distance11 = distance10.distance(ee.Kernel.euclidean(7600, 'meters'), false)
+  .updateMask(territories.updateMask(territories.eq(1)))
+  .updateMask(distance1.mask().not())
+  .updateMask(distance2.mask().not())
+  .updateMask(distance3.mask().not())
+  .updateMask(distance4.mask().not())
+  .updateMask(distance5.mask().not())
+  .updateMask(distance6.mask().not())
+  .updateMask(distance7.mask().not())
+  .updateMask(distance8.mask().not())
+  .updateMask(distance9.mask().not())
+  .updateMask(distance10.mask().not())
+  .add(76000);
+  
+var distance12 = distance11.distance(ee.Kernel.euclidean(7600, 'meters'), false)
+  .updateMask(territories.updateMask(territories.eq(1)))
+  .updateMask(distance1.mask().not())
+  .updateMask(distance2.mask().not())
+  .updateMask(distance3.mask().not())
+  .updateMask(distance4.mask().not())
+  .updateMask(distance5.mask().not())
+  .updateMask(distance6.mask().not())
+  .updateMask(distance7.mask().not())
+  .updateMask(distance8.mask().not())
+  .updateMask(distance9.mask().not())
+  .updateMask(distance10.mask().not())
+  .updateMask(distance11.mask().not())
+  .add(83600);  
+
+var distance13 = distance12.distance(ee.Kernel.euclidean(7600, 'meters'), false)
+  .updateMask(territories.updateMask(territories.eq(1)))
+  .updateMask(distance1.mask().not())
+  .updateMask(distance2.mask().not())
+  .updateMask(distance3.mask().not())
+  .updateMask(distance4.mask().not())
+  .updateMask(distance5.mask().not())
+  .updateMask(distance6.mask().not())
+  .updateMask(distance7.mask().not())
+  .updateMask(distance8.mask().not())
+  .updateMask(distance9.mask().not())
+  .updateMask(distance10.mask().not())
+  .updateMask(distance11.mask().not())
+  .updateMask(distance12.mask().not())
+  .add(91200);  
+
+var distance14 = distance13.distance(ee.Kernel.euclidean(7600, 'meters'), false)
+  .updateMask(territories.updateMask(territories.eq(1)))
+  .updateMask(distance1.mask().not())
+  .updateMask(distance2.mask().not())
+  .updateMask(distance3.mask().not())
+  .updateMask(distance4.mask().not())
+  .updateMask(distance5.mask().not())
+  .updateMask(distance6.mask().not())
+  .updateMask(distance7.mask().not())
+  .updateMask(distance8.mask().not())
+  .updateMask(distance9.mask().not())
+  .updateMask(distance10.mask().not())
+  .updateMask(distance11.mask().not())
+  .updateMask(distance12.mask().not())
+  .updateMask(distance13.mask().not())
+  .add(98800);  
 
 // merge all
 var matrix = distance1.blend(distance2).blend(distance3).blend(distance4).blend(distance5).blend(distance6).blend(distance7)
-  .blend(distance8).blend(distance9).blend(distance10);
-
+  .blend(distance8).blend(distance9).blend(distance10).blend(distance11).blend(distance12).blend(distance13).blend(distance14)
 
 Export.image.toAsset({
 		image: matrix,
